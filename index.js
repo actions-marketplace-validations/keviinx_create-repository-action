@@ -6,11 +6,13 @@ async function run() {
     const name = core.getInput('name');
     const org = core.getInput('org');
     const accessToken = core.getInput('access-token');
+    const githubAPIUrl = core.getInput('github-api-url');
+    
     // const private = core.getBooleanInput('private');
 
     const endpoint = org ? `/orgs/${org}/repos` : '/user/repos'
     axios.post(
-      'https://api.github.com' + endpoint,
+      githubAPIUrl + endpoint,
       {
         name,
         private: true,

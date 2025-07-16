@@ -7,10 +7,11 @@ f1lander uses this action as part of its CI/CD pipline to create temporary repos
 ## Usage
 
 ```yaml
-uses: f1lander/create-repository-action@v1
+uses: f1lander/create-repository-action@v1.0.2
 with:
   name: 'repository-name'
   org: 'org-name'
   private: false
+  github-api-url: 'https://HOSTNAME/api/v3'
   access-token: 'accessTokenWithRepoOrOrgAdminScope'
 ```

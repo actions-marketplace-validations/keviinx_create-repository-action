@@ -11,6 +11,10 @@ inputs:
   access-token:
     description: 'access token with repo scope'
     required: true
+  github-api-url:
+    description: 'url for the github API'
+    required: false
+    default: 'https://api.github.com'
 outputs:
   repo-id:
     description: 'GraphQL ID of newly created repository'
