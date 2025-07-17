@@ -8932,7 +8932,7 @@ async function run() {
     const name = core.getInput('name');
     const org = core.getInput('org');
     const accessToken = core.getInput('access-token');
-    const githubAPIUrl = core.getInput('github-api-url');
+    const githubAPIUrl = process.env.GITHUB_API_URL;
     
     // const private = core.getBooleanInput('private');
     core.info(`githubAPIUrl: ${githubAPIUrl}`)
