@@ -8935,6 +8935,7 @@ async function run() {
     const githubAPIUrl = core.getInput('github-api-url');
     
     // const private = core.getBooleanInput('private');
+    core.info(`githubAPIUrl: ${githubAPIUrl}`)
 
     const endpoint = org ? `/orgs/${org}/repos` : '/user/repos'
     axios.post(
