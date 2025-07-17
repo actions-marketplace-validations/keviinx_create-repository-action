@@ -12,6 +12,5 @@ with:
   name: 'repository-name'
   org: 'org-name'
   private: false
-  github-api-url: 'https://HOSTNAME/api/v3'
   access-token: 'accessTokenWithRepoOrOrgAdminScope'
 ```
