@@ -6,7 +6,7 @@ async function run() {
     const name = core.getInput('name');
     const org = core.getInput('org');
     const accessToken = core.getInput('access-token');
-    const githubAPIUrl = process.env.GITHUB_API_URL;
+    const githubAPIUrl = process.env.GITHUB_API_URL || 'https://api.github.com';
     // const private = core.getBooleanInput('private');
 
     const endpoint = org ? `/orgs/${org}/repos` : '/user/repos'
