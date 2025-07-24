@@ -8933,7 +8933,7 @@ async function run() {
     const org = core.getInput('org');
     const accessToken = core.getInput('access-token');
     const githubAPIUrl = process.env.GITHUB_API_URL || 'https://api.github.com';
-    const visibility = core.getBooleanInput('visibility');
+    const visibility = core.getInput('visibility');
 
     const endpoint = org ? `/orgs/${org}/repos` : '/user/repos'
     axios.post(
