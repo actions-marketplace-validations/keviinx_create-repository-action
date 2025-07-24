@@ -11,10 +11,10 @@ inputs:
   access-token:
     description: 'access token with repo scope'
     required: true
-  private:
-    description: 'specifies whether the target repository should be private'
+  visibility:
+    description: 'visibility of the new repository'
     required: false
-    default: 'true'
+    default: 'private'
 outputs:
   repo-id:
     description: 'GraphQL ID of newly created repository'
