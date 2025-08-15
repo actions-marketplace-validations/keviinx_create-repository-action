@@ -11,6 +11,6 @@ uses: keviinx/create-repository-action@v1
 with:
   name: 'repository-name'
   org: 'org-name'
-  private: false
+  visibility: 'private'
   access-token: 'accessTokenWithRepoOrOrgAdminScope'
 ```
