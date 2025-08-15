@@ -9,8 +9,8 @@ This action is a fork of [f1lander/create-repository-action](https://github.com/
 ```yaml
 uses: keviinx/create-repository-action@v1
 with:
-  name: 'repository-name'
-  org: 'org-name'
-  visibility: 'private'
-  access-token: 'accessTokenWithRepoOrOrgAdminScope'
+  name: "repository-name"
+  org: "org-name"
+  visibility: "private"
+  access-token: "accessTokenWithRepoOrOrgAdminScope"
 ```
