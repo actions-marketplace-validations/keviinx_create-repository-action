@@ -1,23 +1,27 @@
-name: 'Create Repository'
-description: 'Create a new repository from your workflows.'
+name: "New Repository Creator"
+description: "Create a new repository from your workflows."
 inputs:
   name:
-    description: 'name of new repository'
+    description: "name of new repository"
     required: true
   org:
-    description: 'name of an organization'
+    description: "name of an organization"
     required: false
-    default: null
+    default: ""
   access-token:
-    description: 'access token with repo scope'
+    description: "access token with repo scope"
     required: true
   visibility:
-    description: 'visibility of the new repository'
+    description: "visibility of the new repository"
     required: false
-    default: 'private'
+    default: "private"
 outputs:
   repo-id:
-    description: 'GraphQL ID of newly created repository'
+    description: "GraphQL ID of newly created repository"
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: "node12"
+  main: "dist/index.js"
+
+branding:
+  icon: "folder-plus"
+  color: "blue"
